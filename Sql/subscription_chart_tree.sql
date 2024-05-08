@@ -1,0 +1,18 @@
+create table if not exists subscription_chart_tree(
+subscription_code Integer not null,
+subscription_chart_tree_id Integer null,
+subscription_chart_tree_effective_date varchar(255) null,
+subscription_chart_tree_code Integer null,
+subscription_chart_tree_description varchar(255) null,
+treeLevel1 varchar(255) null,
+treeLevel1_desc varchar(255) null,
+treeLevel2 varchar(255) null,
+treeLevel2_desc varchar(255) null,
+treeLevel3 varchar(255) null,
+treeLevel3_desc varchar(255) null,
+treeLevel4 varchar(255) null,
+treeLevel4_desc varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint subscription_chart_tree_pk primary key(subscription_code));
